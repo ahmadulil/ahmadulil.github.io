@@ -34415,6 +34415,15 @@ autoexpHenb.innerHTML = localStorage.autoexpHenb;</script></button>
         setTimeout(LoaderHEN, 500);
     }
 
+    function load_goldhen() {
+        msgs.innerHTML = "Loading Gold HEN v2.3 ...";
+        LoadedMSG = "HEN Loaded - Press Circle To Exit";
+        PLfile = "pl_Goldhen_2.3_672.bin";
+        localStorage.henVer = "v2.3";
+        sessionStorage.henrun = 1;
+        setTimeout(LoaderHEN, 500);
+    }
+
     function load_binloader() {
         msgs.innerHTML = "Loading Bin Loader ...";
         LoadedMSG = "Send Payload To Port 9021";
@@ -34432,13 +34441,6 @@ autoexpHenb.innerHTML = localStorage.autoexpHenb;</script></button>
         LoadedMSG = "FTP Loaded";
         PLfile = "pl_FTP.bin";
         loadScript2();
-    }
-
-    function load_goldhen() {
-        msgs.innerHTML = "Loading Gold Hen ...";
-        LoadedMSG = "GoldHen Loaded";
-        PLfile = "pl_Goldhen_2.3_672.bin";
-        loadScript1();
     }
 
     function load_app2usb() {
